@@ -1,0 +1,104 @@
+
+$brand-primary: lighten(#E50067, 6.5%);
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+@import "bootstrap/glyphicons";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+
+// Components
+@import "bootstrap/component-animations";
+@import "bootstrap/dropdowns";
+@import "bootstrap/button-groups";
+@import "bootstrap/input-groups";
+@import "bootstrap/navs";
+@import "bootstrap/navbar";
+@import "bootstrap/breadcrumbs";
+@import "bootstrap/pagination";
+@import "bootstrap/pager";
+@import "bootstrap/labels";
+@import "bootstrap/badges";
+@import "bootstrap/jumbotron";
+@import "bootstrap/thumbnails";
+@import "bootstrap/alerts";
+@import "bootstrap/progress-bars";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/panels";
+@import "bootstrap/responsive-embed";
+@import "bootstrap/wells";
+@import "bootstrap/close";
+
+// Components w/ JavaScript
+@import "bootstrap/modals";
+@import "bootstrap/tooltip";
+@import "bootstrap/popovers";
+@import "bootstrap/carousel";
+
+// Utility classes
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+
+html {
+  box-sizing: border-box;
+}
+span {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.navbar-brand {
+  padding: 0px 10px;
+  min-height: 80px
+}
+
+.navbar {
+  background-color: #f8f8ff;
+  height:80px;
+  padding:12px 0px 0px 0px;
+  margin-bottom: 0px;
+}
+
+.jumbotron {
+color: #FFF;
+background-image: url("../images/business1920-580.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+h1, .h1 {
+  color: #FFF;
+}
+p {
+  margin-top:50px;
+  margin-bottom:50px;
+  font-size:$jumbotron-font-size;
+  font-weight:200;
+}
+}
+.page-header {
+  border-bottom: 5px solid #6EC6D1;
+}
+
+.footer {
+  position: relative;
+  bottom:  0;
+  width:  100%;
+  height: 60px;
+  background-color: #f5f5f5;
+}
