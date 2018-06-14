@@ -1,0 +1,77 @@
+<?php require('./news/wordpress/wp-blog-header.php'); ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="株式会社インターネット北海道、インターネット北海道、Ineternet Hokkaido, INET, inet,北海道、札幌、札幌市、中央区、エンジニア、エンジニアリング、派遣、プログラミング、ネットワークエンジニア、資格、無料、就職、技術職、就活、">
+    <meta name="description" content="インターネット北海道は札幌を拠点とし、エンジニア、技術者の育成を行っている企業です。手に職をつけたいが、何から始めたらよいかわからない。エンジニアとして、キャリアアップを目指したい。そんな方々に必要な研修と、活躍できる場を提供しています。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        インターネット北海道会社案内
+    </title>
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <p class="text-center"><span onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary btn-lg">今すぐ応募</span></div>
+</div>
+
+<div id="id01" class="modal">
+
+<form method="post" class="modal-content animate" action="php/mail.php">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+  <div class="modal-container">
+    <div class="modal-header">応募フォーム</div>
+    <label for="input-name"><b>お名前</b></label>
+    <input size="20" class="form-control" type="text" id="input-name" placeholder="お名前を入力してください" name="お名前" required>
+
+    <label for="input-mail"><b>メールアドレス</b></label>
+    <input size="30" class="form-control" type="text" id="input-mail" name="Email" placeholder="メールアドレスを入力してください" required>
+
+    <label><b>応募内容</b></label>
+    <select name="応募内容" class="form-control">
+      <option value="training">研修</option>
+      <option value="jobsearch">就職・転職</option>
+      <option value="contact">業務提携</option>
+      <option value="contact">事業委託</option>
+      <option value="contact">ご質問・お問い合わせ</option>
+    </select>
+    <label class="control-label">お問い合わせ内容</label>
+    <textarea class="form-control" rows="5" placeholder="ご質問等あれば入力してください" required="required"></textarea>
+    <div class="my-modal-container">
+    <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>送信</button>
+    <p onclick="document.getElementById('id01').style.display='none'" class="btn btn-basic">Cancel</p>
+    </div>
+  </div>
+</form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
+}
+</script>
+</body>
+    <!-- SCRIPTS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCR1mWOaOkSN4BT2z5_armKEfrSdFGoHhQ&callback=myMap"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="javascripts/jquery-1.12.4.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+
+</body>
+
+</html>
